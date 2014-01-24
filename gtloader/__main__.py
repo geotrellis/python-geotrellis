@@ -3,4 +3,4 @@ import sys
 import commands
 
 if __name__ == '__main__':
-    commands.main(sys.argv)
+    commands.main(sys.argv[1:])
