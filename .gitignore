@@ -1,0 +1,17 @@
+*.egg-info
+.ensime
+TAGS
+\#*#
+*~
+.#*
+.lib
+*.aux.xml
+dist
+build
+
+*.pyc
+.project
+.classpath
+.cache
+.settings
+.history
