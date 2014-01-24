@@ -14,7 +14,6 @@ setup(
     description='GeoTrellis library for mananging raster data.',
     long_description=open('README.rst').read(),
     install_requires=[],
-    extras_require = { 'docs': ["pycco"],},
     classifiers=[
         'Development Status :: 4 - Beta',
         'License :: OSI Approved :: Apache Software License',
