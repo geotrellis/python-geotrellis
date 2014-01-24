@@ -13,7 +13,7 @@ setup(
     license='LICENSE.txt',
     description='GeoTrellis library for mananging raster data.',
     long_description=open('README.rst').read(),
-    install_requires=[],
+    install_requires=["gdal >= 1.10.1"],
     classifiers=[
         'Development Status :: 4 - Beta',
         'License :: OSI Approved :: Apache Software License',
