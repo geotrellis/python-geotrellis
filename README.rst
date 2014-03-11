@@ -33,5 +33,5 @@ to it in a timely manner.
 
 The repository can be found at `the github repository`_.
 
-.. _`The GeoTrellis documentation site`: http://geotrellis.io/documentation/0.9.0/gtloader/
+.. _`The GeoTrellis documentation site`: http://geotrellis.io/documentation/0.9.0/python-geotrellis/
 .. _`the github repository`: http://github.com/geotrellis/python-geotrellis
