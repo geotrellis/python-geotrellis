@@ -231,6 +231,18 @@ class Layer:
         tile_metadata['cols'] = str(ncols)
         tile_metadata['rows'] = str(nrows)
 
+        maxy = raster_extent.extent.ymax
+        minx = raster_extent.extent.xmin
+        cellwidth = raster_extent.cellwidth
+        cellheight = raster_extent.cellheight
+
+        # Account for tile division might extend past east and south extent.
+        tile_xmax = minx + (cellwidth * tile_col_size * ntilecols)
+        tile_ymin = maxy - (cellheight * tile_row_size * ntilerows)
+
+        tile_metadata['xmax'] = tile_xmax
+        tile_metadata['ymin'] = tile_ymin
+
         # Make the directory that will hold the tiles
         os.makedirs(tile_dir)
 
@@ -245,11 +257,6 @@ class Layer:
         tile_path_ft = os.path.join(tile_dir,'%s.arg' % tile_name_ft)
 
         total_tiles = ntilerows * ntilecols
-
-        maxy = raster_extent.extent.ymax
-        minx = raster_extent.extent.xmin
-        cellwidth = raster_extent.cellwidth
-        cellheight = raster_extent.cellheight
 
         for row in xrange(0,ntilerows):
             ystart = row * tile_row_size
