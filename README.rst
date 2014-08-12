@@ -2,7 +2,7 @@
 Python-GeoTrellis
 =================
 
-Python-Cicero provides funcitonality for working with GeoTrellis raster data.
+Python-GeoTrellis provides funcitonality for working with GeoTrellis raster data.
 
 The documentation is at `the GeoTrellis documentation site`_.
 
